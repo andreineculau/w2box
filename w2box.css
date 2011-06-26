@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e8e8e8;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    /* ANDRIE */
+    /*font-size: 0.9em;*/
+    font-size: 0.7em;
+    /* ANDRIE end */
+}
+
+#page {
+    width: 760px;
+    margin: 20px auto;
+    background: url("images/page.gif") repeat-y top;
+    background-color: #fff;
+}
+
+#header {
+    height: 87px;
+    background: url("images/header.gif")
+}
+
+#header h1 {
+    margin: 0;
+    /* ANDRIE */
+    /*font-size:2.0em;*/
+    font-size: 2.5em;
+    /* ANDRIE end */
+    padding: 33px 0 0 103px;
+}
+
+#header h1 a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#content {
+    margin: 0;
+    padding: 5px 22px;
+}
+
+#footer {
+    clear: both;
+    width: 760px;
+    background: url("images/footer.gif") no-repeat bottom;
+    border: none;
+}
+
+#footer p {
+    margin: 0;
+    padding: 20px 0;
+    color: #888888;
+    text-align: center;
+}
+
+#footer a {
+    color: #888888;
+}
+
+#footer a:hover {
+    color: #ffffff;
+    background: #888888;
+}
+
+#warningmsg a, td a {
+    color: #DF4556 /*ANDRIE*/;
+    text-decoration: none; /*ANDRIE end*/
+}
+
+#warningmsg a, td a:visited, td a:hover {
+    color: #A30718
+}
+
+a img {
+    border: 0;
+}
+
+form {
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+label {
+    float: left;
+    width: 15%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+input, textarea, select {
+    text-align: left;
+}
+
+#errormsg {
+    text-align: center;
+    color: #f00;
+    font-weight: bold;
+}
+
+#warningmsg {
+    background-color: #EEEEEE;
+    margin: 5px;
+}
+
+#warningmsg p {
+    color: #000000;
+    padding: 5px;
+}
+
+.formdiv .small {
+    margin: 0 0 0 16%;
+    /*ANDRIE*/
+    /*font-size: 0.7em;*/
+    font-size: 0.8em;
+    /*ANDRIE end*/
+    margin-bottom: 1em;
+}
+
+.formdiv p {
+    margin: 3px;
+    padding: 0;
+}
+
+a#hiddenlink, a#hiddenlink:hover {
+    color: #888888;
+    text-decoration: none;
+    cursor: text;
+    background: none;
+}
+
+.red {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+span.sort {
+	position:absolute;
+	visibility:hidden;
+}
+
+div#dirpath {
+	padding-bottom: 5px;
+}
+
+a.right {
+	float:right;
+	margin-right:2px;
+}
+
+a.left {
+	float:left;
+	margin-left:2px;
+}
+
+table#filelisting_table {
+	visibility:hidden;
+}
+
+table.sortable {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    height: 30px;
+}
+
+table.sortable .lefted {
+    text-align: left;
+}
+
+table.sortable img {
+    vertical-align: middle
+}
+
+table.sortable th {
+    height: 30px;
+    font-size: 1.1em;
+    background-color: #999;
+    padding: 4px;
+    border: 1px #fff solid;
+    color: #fff;
+    font-weight: bold;
+}
+
+table.sortable th a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ANDRIE */
+/*table.sortable #th1 {width: 30%;}*/
+table.sortable #th1 {
+    width: 30%;
+}
+
+table.sortable #th5 {
+    width: 5%;
+}
+
+/* ANDRIE end */
+table.sortable #th3 {
+    width: 12%;
+}
+
+table.sortable #th4 {
+    width: 8%;
+}
+
+table.sortable #th2 {
+    width: 5%;
+}
+
+table.sortable #th6 {
+    width: 5%;
+}
+
+table.sortable tr.on td {
+    background: #eee;
+}
+
+table.sortable tr.on td:first-child a {
+    text-decoration: underline;
+}
+
+table.sortable td:first-child {
+    /*font-family: "Courier New", Courier, monospace;*/
+}
+
+table.sortable tr.delete {
+    background: #fcc;
+}
+
+table.sortable td {
+    height: 30px;
+    padding: 3px;
+    margin: 0;
+    overflow: hidden;
+}
+
+div#upload_pb {
+    width: 100%;
+    margin: 7px 0 6px 0;
+}
+
+#upload_pb p span {
+    font-weight: bold;
+}
+
+#upload_border {
+    margin: 15px auto;
+    border: 1px #000000 solid;
+}
+
+#upload_progress {
+    width: 0;
+    height: 15px;
+    background-color: #DF4556;
+}

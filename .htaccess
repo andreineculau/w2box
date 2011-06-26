@@ -1,0 +1,34 @@
+SetEnv TZ Europe/Stockholm
+Options ExecCGI -Indexes FollowSymLinks
+
+#w2box
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	
+	#Directory
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)/$ index.php?d=$1&BAD_HOSTING=%{HTTP:Authorization} [QSA,L]
+
+	#File
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^([^/]+)$ index.php?download=$1&BAD_HOSTING=%{HTTP:Authorization} [QSA,L]
+
+	#Directory/file
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)/([^/]+)$ index.php?d=$1&download=$2&BAD_HOSTING=%{HTTP:Authorization} [QSA,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{QUERY_STRING} ^(.+)$
+	RewriteRule ^(.*)$ index.php?%1&d=$1&BAD_HOSTING=%{HTTP:Authorization} [QSA,L]
+	
+	RewriteRule ^(.*)$ $1?BAD_HOSTING=%{HTTP:Authorization} [QSA,L]
+</IfModule>
+
+<IfModule mod_security.c>
+	SecFilterScanPOST Off
+</IfModule>

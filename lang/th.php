@@ -1,0 +1,47 @@
+<?php
+// thanks to the Information Technology Center of Surindra Rajabhat University
+
+//msg
+$lang['warning_msg'] = "¼ÙéãËéºÃÔ¡ÒÃ¨ÐäÁèÃÑº¼Ô´ªÍºµèÍä¿Åìã´æ ·Õè·èÒ¹ÍÑ¾âËÅ´äÇéã¹¡Ã³ÕÊÙ­ËÒÂ !";
+$lang['delete_confirm_msg'] = "¤Ø³á¹èã¨àËÃÍ·Õè¨ÐÅºä¿Åì¹Õé ?";
+//upload form
+$lang['upload'] = 'ÍÑ¾âËÅ´';
+$lang['file'] = 'ä¿Åì';
+$lang['renameto'] = 'à»ÅÕèÂ¹ª×èÍà»ç¹';
+$lang['filetypesallowed'] = 'ª¹Ô´ä¿Åì·ÕèÊÒÁÒÃ¶ÍÑ¾âËÅ´';
+$lang['filesizelimit'] = '¨Ó¡Ñ´¢¹Ò´ä¿Åì';
+$lang['filedeleteafter'] = 'ä¿Åì¨Ð¶Ù¡ÅºËÅÑ§¨Ò¡ÇÑ¹·ÕèÍÑ¾âËÅ´ {D} ÇÑ¹';
+//listing heading
+$lang['filename'] = 'ª×èÍä¿Åì';
+$lang['date'] = 'ÇÑ¹·Õè';
+$lang['date_format'] = 'd/m/Y H:i';
+$lang['type'] = '»ÃÐàÀ·';
+$lang['size'] = '¢¹Ò´';
+$lang['delete'] = 'Åº';
+$lang['download'] = '´ÒÇ¹ìâËÅ´';
+$lang['delete_link'] = 'Åº';
+$lang['download_link'] = '´ÒÇ¹ìâËÅ´àÅÂ!';
+$lang['nofiles'] = 'ä´àÃç¡·ÃÍÃÕèà¡çºä¿ÅìÇèÒ§ !!';
+
+
+//logging
+$lang['DELETE'] = 'Åº';
+$lang['UPLOAD'] = 'ÍÑ¾âËÅ´';
+$lang['DOWNLOAD'] = '´ÒÇ¹ìâËÅ´';
+//delete error
+$lang['delete_error_notfound'] = "¼Ô´¾ÅÒ´. äÁè¾ºä¿Åì.";
+$lang['delete_error_cant'] = "¼Ô´¾ÅÒ´ ! äÁèÊÒÁÒÃ¶Åºä¿Åìä´é";
+//upload error
+$lang['upload_error'] = array(1 => "The uploaded file exceeds the upload_max_filesize directive in php.ini",
+							  2 => "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.",
+						 	  3 => "The uploaded file was only partially uploaded.",
+						 	  4 => "No file was uploaded.",
+						 	  6 => "Missing a temporary folder.");
+
+						 	  
+$lang['upload_error_sizelimit'] = "¢¹Ò´ä¿ÅìãË­èà¡Ô¹¡ÓË¹´";
+$lang['upload_error_fileexist'] = "ÁÕä¿Åì¹ÕéÍÂÙèáÅéÇ.";
+$lang['upload_error_nocopy'] = "äÁèÊÒÁÒÃ¶¤Ñ´ÅÍ¡ä¿Åìä»ÂÑ§·Õèà¡çºä´é.";
+$lang['upload_error_sid'] = "äÁè¾ºä¿Åì·ÕèÃÐºØ !.";
+$lang['upload_error_badext'] = "äÁèÍ¹Ø­ÒµÔ¹ÒÁÊ¡ØÅ¹Õé";
+?>
