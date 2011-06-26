@@ -1,3 +1,8 @@
+20110626 Andrei Neculau
+I have been using w2box for small projects for 2-3 years now. Thought the least I can do as a thank-you-w2box! is release the project back into the wild (including my small fixes & additions), as Clement Beffa has moved away from the project. Enjoy & fork away!
+
+---------------------------
+
 w2box: php file repository
 
 (c) 2005-2008, Clement Beffa
