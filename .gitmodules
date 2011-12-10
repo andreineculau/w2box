@@ -1,0 +1,12 @@
+[submodule "libs.js/jquery-mousewheel"]
+	path = libs.js/jquery-mousewheel
+	url = git://github.com/brandonaaron/jquery-mousewheel.git
+[submodule "libs.js/jquery-easing"]
+	path = libs.js/jquery-easing
+	url = git://github.com/danro/jquery-easing.git
+[submodule "libs.js/fancy-box"]
+	path = libs.js/fancy-box
+	url = git://github.com/vanntastic/fancy-box.git
+[submodule "libs.js/jquery"]
+	path = libs.js/jquery
+	url = git://github.com/jquery/jquery.git

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require ('config.php');
 require ('libs/funcs.php');
+require ('config.php');
 
 #Authentication
 require ('libs/index.authorize.php');
@@ -27,7 +27,7 @@ if ($dir && $config['enable_folder_maxdepth']) {
 		}
 	}
 	$config['storage_path'] .= ($config['storage_path_relative'] = "/" . join("/", $dir));
-	
+
 	if (isset($dir)) {
 		$dirlevel = sizeof($dir);
 	} else {

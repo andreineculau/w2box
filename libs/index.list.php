@@ -19,15 +19,15 @@
 		</script>
 		<script type="text/javascript" src="<?php echo js_url('w2box'); ?>">
 		</script>
-		<script type="text/javascript" src="<?php echo js_url('jquery', $config['jquery_js']); ?>">
+		<script type="text/javascript" src="<?php echo js_url('jquery/dist/jquery.min', $config['jquery_js']); ?>">
 		</script>
-		<script type="text/javascript" src="<?php echo js_url('jquery/jquery.easing-1.3'); ?>">
+		<script type="text/javascript" src="<?php echo js_url('jquery-easying/jquery.easing.min'); ?>">
 		</script>
-		<script type="text/javascript" src="<?php echo js_url('jquery/jquery.mousewheel-3.0.2'); ?>">
+		<script type="text/javascript" src="<?php echo js_url('jquery-mousewheel/jquery.mousewheel'); ?>">
 		</script>
-		<script type="text/javascript" src="<?php echo js_url('jquery.fancybox', $config['fancybox_js']); ?>">
+		<script type="text/javascript" src="<?php echo js_url('fancy-box/jquery.fancybox/jquery.fancybox-1.2.1.pack', $config['fancybox_js']); ?>">
 		</script>
-		<link rel="stylesheet" type="text/css" href="<?php echo js_url('jquery.fancybox', $config['fancybox_js'], 'css'); ?>" />
+		<link rel="stylesheet" type="text/css" href="<?php echo js_url('fancy-box/jquery.fancybox/jquery.fancybox', $config['fancybox_js'], 'css'); ?>" />
 		<script type="text/javascript">
 			$(document).ready(function(){
 			    $("a.fancybox_image").fancybox({
@@ -77,7 +77,7 @@
 			        'autoDimensions': false,
 			        'autoScale': false
 			    });
-			    
+
 			})
 		</script>
 		<?php if (isset($_REQUEST['preview'])): ?>
@@ -119,7 +119,7 @@
 						</p>
 					</form>
 				</div>
-				<?php 
+				<?php
 				endif;
 				?>
 				<?php if (!($config['hide_upload']) || $auth): ?>
@@ -146,11 +146,11 @@
 							<?php if ($config['delete_after']) echo '<br />' . str_replace("{D}", $config['delete_after'], $lang['filedeleteafter']); ?>
 						</p>
 					</form>
-					<?php 
+					<?php
 					#Progress
 					if ($config['upload_progressbar'])
 					{
-						
+
 					?>
 					<div id="upload_pb" style="display: none;">
 						<p>
@@ -178,7 +178,7 @@
 								echo ' &raquo; ' . $v . ' ';
 							else
 								echo ' &raquo; <a href="' . $path . '/">' . $v . '</a> ';
-								
+
 						}
 						/*if (sizeof(dir) > 1)
 						{
@@ -227,7 +227,7 @@
 							<?php while ($file = @array_shift(each($files))): ?>
 								<tr class="off" onmouseover="if (this.className!='delete') {this.className='on'};" onmouseout="if (this.className!='delete') {this.className='off'};">
 									<td class="lefted">
-										<?php 
+										<?php
 										$dlink = $file['file'];
 										if ($config['utf8encode_directlink'])
 										{
@@ -242,19 +242,19 @@
 										{
 											$url = BASE_URL . $config['storage_path_relative'] . '/' . urlencode($dlink) . '/';
 										}
-										
+
 										$filename = $file['file'];
 										$maxlen = 45;
 										if ($maxlen > 0 && strlen($file['file']) > $maxlen)
 										{
 											$filename = substr($file['file'], 0, $maxlen - 3) . "...";
 										}
-										
+
 										if ($file['ext'] != "directory")
 										{
 											$class = '';
 											$rel = '';
-											
+
 											if (preg_match("/\d{6,8}/", $file['file'])){
 												$series_name = preg_replace("/[ _]?\d{6,8}[ _]?/", '', basename($file['file'], '.' . extname($file['file'])));
 												if (!in_array($series_name, $series)){
@@ -262,7 +262,7 @@
 													$files[] = array('file' => preg_replace("/\d{6,8}/", '!latest!', $file['file']), 'date' => time(), 'size' => 0, 'ext' => $file['ext'], 'counter' => 0, 'link' => urlencode(preg_replace("/\d{6,8}/", '!latest!', $file['file'])), 'permalink' => $series_name);
 												}
 											}
-											
+
 											if (in_array($file['ext'], $config['fancybox_image']))
 											{
 												$class = 'fancybox_image';
@@ -395,7 +395,7 @@
 				try {
 				    var pageTracker = _gat._getTracker("<?php echo $config['analytics']; ?>");
 				    pageTracker._trackPageview();
-				} 
+				}
 				catch (err) {
 				}
 			</script>

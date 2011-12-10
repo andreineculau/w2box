@@ -45,30 +45,30 @@ $config['allow_overwrite'] = true;
 // if true, ask confirmation before deletion
 $config['confirm_delete'] = true;
 // if true, show a warning msg at the top
-// you can edit the warning msg at the end 
+// you can edit the warning msg at the end
 // of this file ($lang['warning_msg'])
 $config['show_warning'] = false;
-// if true, utf8 encode the direct link, 
-// turn this on if you're directlink doesn't work 
+// if true, utf8 encode the direct link,
+// turn this on if you're directlink doesn't work
 // with international characters
 $config['utf8encode_directlink'] = true;
 // enable folder creation and the value is the maximum depth
 $config['enable_folder_maxdepth'] = 3;
 
 //activate upload progress bar
-$config['upload_progressbar']=false;
+$config['upload_progressbar'] = false;
 //path to the cgi script as an URL link relative to public url of the script
-$config['upload_cgiscript']=BASE_URL.'/upload.cgi';
+$config['upload_cgiscript'] = BASE_URL . '/upload.cgi';
 //$config['upload_cgiscript']="/cgi-bin/upload.cgi
 //path to the tmp dir, if this one doesn't work, use a full path
 //(ie "/home/username/tmp", "~tmp", "C:/wamp/tmp")
-$config['upload_tmpdir']="tmp";
+$config['upload_tmpdir'] = "tmp";
 
 //--- admin ---
 // To log-in as an admin when every feature is
 // hidden, click on "Powered" (hidden link) at
 // the bottom of the page.
-// 
+//
 // if true, activate admin authentication
 $config['admin_actived'] = true;
 // admin username
@@ -98,7 +98,7 @@ $config['log_filename'] = "w2box.log";
 $config['log_upload'] = true;
 // if true, log delete activity
 $config['log_delete'] = true;
-// if true, log download activity (you should disable 
+// if true, log download activity (you should disable
 // direct link if you want to track every download
 $config['log_download'] = true;
 
@@ -109,16 +109,16 @@ $config['hide_count_downloads'] = false;
 $config['dynamic_directory_date'] = true;
 $config['dynamic_directory_size'] = true;
 $config['timezone'] = 'Europe/Stockholm';
-#$config['jquery_js'] = array();
-#$config['fancybox_js'] = array();
-#$config['storage_path_mirror'] = array();
-#$config['analytics'] = '';
+//$config['jquery_js'] = array();
+//$config['fancybox_js'] = array();
+//$config['storage_path_mirror'] = array();
+//$config['analytics'] = '';
 // ANDRIE end
 
 
-if (!$config['jquery_js'])
-	$config['jquery_js'] = array(BASE_URL . '/libs.js/jquery', '1.3.2', '.min');
-if (!$config['fancybox_js'])
-	$config['fancybox_js'] = array(BASE_URL . '/libs.js/jquery.fancybox', '1.3.0rc2', '-pack');
+//if (!$config['jquery_js'])
+//    $config['jquery_js'] = array(BASE_URL . '/libs.js/jquery/dist/jquery.min', '', '');
+//if (!$config['fancybox_js'])
+//	$config['fancybox_js'] = array(BASE_URL . '/libs.js/fancy-box/jquery.fancybox/jquery.fancybox-1.2.1.pack', '', '');
 require("lang/index.php");
 ?>
