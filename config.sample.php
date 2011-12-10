@@ -115,10 +115,5 @@ $config['timezone'] = 'Europe/Stockholm';
 //$config['analytics'] = '';
 // ANDRIE end
 
-
-//if (!$config['jquery_js'])
-//    $config['jquery_js'] = array(BASE_URL . '/libs.js/jquery/dist/jquery.min', '', '');
-//if (!$config['fancybox_js'])
-//	$config['fancybox_js'] = array(BASE_URL . '/libs.js/fancy-box/jquery.fancybox/jquery.fancybox-1.2.1.pack', '', '');
 require("lang/index.php");
 ?>

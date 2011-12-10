@@ -21,7 +21,7 @@
 		</script>
 		<script type="text/javascript" src="<?php echo js_url('jquery/dist/jquery.min', $config['jquery_js']); ?>">
 		</script>
-		<script type="text/javascript" src="<?php echo js_url('jquery-easying/jquery.easing.min'); ?>">
+		<script type="text/javascript" src="<?php echo js_url('jquery-easing/jquery.easing.min'); ?>">
 		</script>
 		<script type="text/javascript" src="<?php echo js_url('jquery-mousewheel/jquery.mousewheel'); ?>">
 		</script>
