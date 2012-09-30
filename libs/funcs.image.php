@@ -7,12 +7,9 @@ function resize_image($file, $max_width, $max_height) {
 	$old_file = realpath($config['storage_path']) . '/' . basename($file);
 	list ($width, $height, $type) = getimagesize($old_file);
 	
-	if ($width > $height && $width > $max_width)
-		$ratio = ($max_width / $width);
-	if ($width > $height && $width > $max_width)
-		$ratio = ($max_height / $height);
-	
-	if (! $ratio)
+	$ratio = min((($width > $max_width) ? ($max_width / $width) : 1), (($height > $max_height) ? ($max_height / $height) : 1));
+
+	if ($ratio == 1)
 		return $old_file;
 	
 	$new_file = BASE_PATH . '/tmp' . $config['storage_path_relative'] . '/' . basename($file);

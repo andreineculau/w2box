@@ -1,7 +1,7 @@
 <?php
 session_start();
-require ('libs/funcs.php');
 require ('config.php');
+require ('libs/funcs.php');
 
 #Authentication
 require ('libs/index.authorize.php');
